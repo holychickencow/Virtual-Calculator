@@ -1,5 +1,8 @@
 *{
     background-color: lightskyblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .calculator{
@@ -12,9 +15,9 @@
 
 .output{
     background-color: #97978F;
-    width: 500px;
+    border: 2px solid white;
+    width: 496px;
     height: 200px;
-    border: 1px black;
 }
 .buttoncontainer{
     display: inline-block;
@@ -22,17 +25,18 @@
 }
 
 button{
+    border: 2px solid white;
     height: 100px;
     width: 100px;
     float: left;
 }
 
 button:hover{
-    background-color: cyan;
+    background-color: white;
 }
 
 .number{
-    background-color: white;
+    background-color: #F5F5F5;
 }
 
 .operator{
