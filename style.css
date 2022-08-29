@@ -14,10 +14,26 @@
 }
 
 .output{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
     background-color: #97978F;
     border: 2px solid white;
+    color: white;
+    font-weight: bold;  
     width: 496px;
-    height: 200px;
+    height: 150px;
+}
+
+#preVal{
+    background-color: #97978F;
+    font-size: 120%;
+}
+
+#curVal{
+    background-color: #97978F;
+    font-size: 200%;
 }
 .buttoncontainer{
     display: inline-block;
