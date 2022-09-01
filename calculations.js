@@ -25,6 +25,10 @@ function updateNumber(number){
         return;
     }
     firstValue = '' + firstValue + number;
+    if(firstValue.length > 25){
+        clearAll();
+        alert("Value is too large.");
+    }
     document.getElementById("curVal").innerHTML = firstValue;
     document.getElementById("preVal").innerHTML = secondValue + " " + curOp;
 }
@@ -40,6 +44,7 @@ function updateOperator(operator){
     curOp = operator;
     if(!finished){
         secondValue = firstValue;
+        finished = false;
     }
     firstValue = '';
     document.getElementById("preVal").innerHTML = secondValue + " " + operator;
@@ -63,6 +68,10 @@ function calculate(nextOp){
             break;
         default: 
             return;
+    }
+    if(result.length > 25){
+        clearAll();
+        alert("Value is too large.");
     }
     document.getElementById("preVal").innerHTML = secondValue + " " + curOp + " " + firstValue + " =";
     document.getElementById("curVal").innerHTML = result;
